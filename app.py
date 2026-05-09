@@ -33,7 +33,7 @@ st.markdown("""
 }
 
 h1, h2, h3 {
-    color: #111827;
+    color: #000000;
     font-family: 'Inter', sans-serif;
 }
 
@@ -51,7 +51,7 @@ h1, h2, h3 {
     border-radius: 14px;
     border: none;
     background: linear-gradient(135deg, #2563eb, #4f46e5);
-    color: white;
+    color: #000000;
     font-weight: 600;
 }
 
