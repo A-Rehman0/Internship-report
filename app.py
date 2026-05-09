@@ -26,6 +26,13 @@ st.markdown("""
 [data-testid="stAppViewContainer"] {
     background: linear-gradient(135deg, #f6f8fb 0%, #eef2ff 100%);
 }
+html, body, [class*="css"]  {
+    color: #111827 !important;
+}
+
+p, span, div {
+    color: #111827;
+}
 
 .block-container {
     padding: 2rem 3rem;
