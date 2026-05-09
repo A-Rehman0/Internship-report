@@ -161,7 +161,7 @@ if st.session_state.page == "home":
         st.markdown("""
         <div class="card">
             <h3 style="margin:0;">🤖 Club Data</h3>
-            <p style="margin-top:8px; color:#6b7280; font-size:13px;">
+            <p style="margin-top:8px; color:#000000; font-size:13px;">
                 Analyze school clubs, sponsors, budgets, and participation insights.
             </p>
         </div>
@@ -173,7 +173,7 @@ if st.session_state.page == "home":
         st.markdown("""
         <div class="card">
             <h3 style="margin:0;">📊 Business Dashboard</h3>
-            <p style="margin-top:8px; color:#6b7280; font-size:13px;">
+            <p style="margin-top:8px; color:#000000; font-size:13px;">
                 Explore business leads, domains, cities, and contact intelligence.
             </p>
         </div>
@@ -185,7 +185,7 @@ if st.session_state.page == "home":
         st.markdown("""
         <div class="card">
             <h3 style="margin:0;">🎮 Game Analysis</h3>
-            <p style="margin-top:8px; color:#6b7280; font-size:13px;">
+            <p style="margin-top:8px; color:#000000; font-size:13px;">
                 Filter and analyze games by category, title, and quality metrics.
             </p>
         </div>
