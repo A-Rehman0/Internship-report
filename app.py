@@ -57,6 +57,22 @@ h1, h2, h3 {
     color: white;
     font-weight: 600;
 }
+/* Metric label */
+[data-testid="stMetricLabel"] {
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+
+/* Metric value */
+[data-testid="stMetricValue"] {
+    font-weight: 800 !important;
+    font-size: 22px !important;
+}
+
+/* Delta text */
+[data-testid="stMetricDelta"] {
+    font-weight: 600 !important;
+}
 
 </style>
 """, unsafe_allow_html=True)
