@@ -26,13 +26,6 @@ st.markdown("""
 [data-testid="stAppViewContainer"] {
     background: linear-gradient(135deg, #f6f8fb 0%, #eef2ff 100%);
 }
-html, body, [class*="css"]  {
-    color: #111827 !important;
-}
-
-p, span, div {
-    color: #111827;
-}
 
 .block-container {
     padding: 2rem 3rem;
@@ -40,7 +33,7 @@ p, span, div {
 }
 
 h1, h2, h3 {
-    color: #000000;
+    color: #111827;
     font-family: 'Inter', sans-serif;
 }
 
@@ -58,7 +51,7 @@ h1, h2, h3 {
     border-radius: 14px;
     border: none;
     background: linear-gradient(135deg, #2563eb, #4f46e5);
-    color: #000000;
+    color: white;
     font-weight: 600;
 }
 
@@ -101,7 +94,13 @@ def load_data(url):
 def get_sheet_url(csv_url):
     return csv_url.replace("/export?format=csv", "/edit")
 
+def interns():
+        df0 = pd.read_csv("https://docs.google.com/spreadsheets/d/1qLmeLGtUVxjhJScYqY35vzNZEngsisQfTte6zYfxmoQ/export?format=csv",header=4)
+        df0 = df0.iloc[:, 2:]
+        st.dataframe(df0)
+
 def form():
+
         col1, col2 = st.columns(2)
 
         with col1:
@@ -139,6 +138,8 @@ def form():
                 </button>
             </a>
             """, unsafe_allow_html=True)
+    
+
 
 # =====================================================
 # HOME
@@ -167,8 +168,8 @@ if st.session_state.page == "home":
     with col1:
         st.markdown("""
         <div class="card">
-            <h3 style="margin:0;color:#000000;">🤖 Club Data</h3>
-            <p style="margin-top:8px; color:#000000; font-size:13px;">
+            <h3 style="margin:0;">🤖 Club Data</h3>
+            <p style="margin-top:8px; color:#0000; font-size:13px;">
                 Analyze school clubs, sponsors, budgets, and participation insights.
             </p>
         </div>
@@ -179,8 +180,8 @@ if st.session_state.page == "home":
     with col2:
         st.markdown("""
         <div class="card">
-            <h3 style="margin:0;color:#000000;">📊 Business Dashboard</h3>
-            <p style="margin-top:8px; color:#000000; font-size:13px;">
+            <h3 style="margin:0;">📊 Business Dashboard</h3>
+            <p style="margin-top:8px; color:#6b7280; font-size:13px;">
                 Explore business leads, domains, cities, and contact intelligence.
             </p>
         </div>
@@ -191,8 +192,8 @@ if st.session_state.page == "home":
     with col3:
         st.markdown("""
         <div class="card">
-            <h3 style="margin:0;color:#000000;">🎮 Game Analysis</h3>
-            <p style="margin-top:8px; color:#000000; font-size:13px;">
+            <h3 style="margin:0;">🎮 Game Analysis</h3>
+            <p style="margin-top:8px; color:#6b7280; font-size:13px;">
                 Filter and analyze games by category, title, and quality metrics.
             </p>
         </div>
@@ -200,7 +201,8 @@ if st.session_state.page == "home":
 
         st.button("Open Game Analysis", use_container_width=True, on_click=lambda: go("game"))
 
-    st.info("Modern multi-module dashboard system")
+    st.markdown(" ### Interns Attendace")
+    interns()
     form()
     st.stop()
 # =====================================================
@@ -506,6 +508,8 @@ elif st.session_state.page == "club":
     st.markdown("_____")
 
 # import streamlit as st
+
+
 
 
 
