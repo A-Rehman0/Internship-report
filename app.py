@@ -21,7 +21,7 @@ st.markdown("""
 
 #MainMenu, header, footer {
     visibility: hidden;
-    color:#000000;
+    
 }
 
 [data-testid="stAppViewContainer"] {
@@ -40,6 +40,7 @@ h1, h2, h3 {
 }
 
 .card {
+    color:#000000;
     background: white;
     padding: 20px;
     border-radius: 18px;
