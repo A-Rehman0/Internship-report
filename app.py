@@ -21,6 +21,7 @@ st.markdown("""
 
 #MainMenu, header, footer {
     visibility: hidden;
+    color:#000000;
 }
 
 [data-testid="stAppViewContainer"] {
@@ -30,10 +31,11 @@ st.markdown("""
 .block-container {
     padding: 2rem 3rem;
     max-width: none;
+    color:#000000;
 }
 
 h1, h2, h3 {
-    color: #111827;
+    color:#000000;
     font-family: 'Inter', sans-serif;
 }
 
