@@ -157,6 +157,27 @@ def form():
                 </button>
             </a>
             """, unsafe_allow_html=True)
+        
+        st.markdown("")
+        
+        st.markdown("""
+            <a href="https://my-app-app-og6fmsc6u66nmh2bn5qodx.streamlit.app/" target="_blank">
+                <button style="
+                    width:100%;
+                    padding:14px;
+                    border-radius:12px;
+                    background:linear-gradient(135deg, #8b5cf6, #ec4899);
+                    color:white;
+                    border:2px solid #000000;
+                    font-weight:600;
+                    cursor:pointer;
+                ">
+                    Interns Status
+                </button>
+            </a>
+            """, unsafe_allow_html=True)
+        
+        
     
 
 
@@ -220,10 +241,46 @@ if st.session_state.page == "home":
 
         st.button("Open Game Analysis", use_container_width=True, on_click=lambda: go("game"))
 
+    
+    st.markdown(" ### Login Crediatials (CJN)")
+    
+    col1, col2,col3 = st.columns(3)
+
+    with col1:
+        st.markdown(" #### Admin Credientials")
+        st.code("cjn.rehmantade331@gmail.com")
+
+    with col2:
+        st.markdown("#### Password")
+        st.code("Pass@143")
+
+    with col3:
+        st.markdown("#### Website")
+        st.code("https://cjnnow.com/admin")
+        # st.status("copied")
+
+    col1, col2,col3 = st.columns(3)
+
+    with col1:
+        st.markdown(" #### College Credientials")
+        st.code("admin@nkorchid.com")
+
+    with col2:
+        st.markdown("#### Password")
+        st.code("Pass@143")
+    with col3:
+        st.markdown("#### Website")
+        st.code("https://cjnnow.com/school-admin-login")
+
+
+
+
     st.markdown(" ### Interns Attendace")
     interns()
     form()
     st.stop()
+
+
 # =====================================================
 # GAME PAGE (UNCHANGED)
 # =====================================================
@@ -385,6 +442,7 @@ elif st.session_state.page == "business":
                 get_sheet_url(url),
                 use_container_width=True
             )
+            
     
         # =====================================================
 # CLUB PAGE
@@ -413,6 +471,8 @@ elif st.session_state.page == "club":
     df = load_club_data()
 
     st.markdown("_____")
+
+    
 
     # ================= KPI METRICS =================
     cols = st.columns(12)
@@ -451,10 +511,16 @@ elif st.session_state.page == "club":
 
     st.markdown("_____")
 
+
+
     # ================= FULL DATA =================
     st.dataframe(df, use_container_width=True)
 
+    
+
     st.markdown("_____")
+
+    
 
     # ================= CLUB ANALYSIS =================
     st.subheader("Club Name Analysis")
@@ -504,6 +570,8 @@ elif st.session_state.page == "club":
 
     st.markdown("_____")
 
+    
+
     # ================= DATA COLLECTED BY =================
     st.subheader("Data Collected By Analysis")
 
@@ -526,10 +594,10 @@ elif st.session_state.page == "club":
 
     st.markdown("_____")
 
+    
+
+
+
+   
+
 # import streamlit as st
-
-
-
-
-
-
