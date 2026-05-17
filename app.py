@@ -25,7 +25,9 @@ st.markdown("""
 }
 
 [data-testid="stAppViewContainer"] {
-    background: linear-gradient(135deg, #f6f8fb 0%, #eef2ff 100%);
+    background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+    color: #1e293b;
+    border: 1px solid #c7d2fe;
 }
 
 .block-container {
@@ -242,36 +244,37 @@ if st.session_state.page == "home":
         st.button("Open Game Analysis", use_container_width=True, on_click=lambda: go("game"))
 
     
-    st.markdown(" ### Login Crediatials (CJN)")
-    
-    col1, col2,col3 = st.columns(3)
 
-    with col1:
-        st.markdown(" #### Admin Credientials")
-        st.code("cjn.rehmantade331@gmail.com")
+    with st.expander("Login Credentials (CJN)"):
 
-    with col2:
-        st.markdown("#### Password")
-        st.code("Pass@143")
+        # st.markdown("### Login Credentials (CJN)")
 
-    with col3:
-        st.markdown("#### Website")
-        st.code("https://cjnnow.com/admin")
-        # st.status("copied")
+        col1, col2, col3 = st.columns(3)
 
-    col1, col2,col3 = st.columns(3)
+        with col1:
+            st.markdown("#### Admin Credentials")
+            st.code("cjn.rehmantade331@gmail.com")
 
-    with col1:
-        st.markdown(" #### College Credientials")
-        st.code("admin@nkorchid.com")
+        with col2:
+            st.markdown("#### Password")
+            st.code("Pass@143")
 
-    with col2:
-        st.markdown("#### Password")
-        st.code("Pass@143")
-    with col3:
-        st.markdown("#### Website")
-        st.code("https://cjnnow.com/school-admin-login")
+        with col3:
+            st.markdown("#### Website")
+            st.code("https://cjnnow.com/admin")  
+        
+        col1, col2,col3 = st.columns(3)
 
+        with col1:
+            st.markdown(" #### College Credientials")
+            st.code("admin@nkorchid.com")
+
+        with col2:
+            st.markdown("#### Password")
+            st.code("Pass@143")
+        with col3:
+            st.markdown("#### Website")
+            st.code("https://cjnnow.com/school-admin-login")         # st.status("copied")
 
 
 
