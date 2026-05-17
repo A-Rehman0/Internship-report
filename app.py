@@ -261,7 +261,7 @@ if st.session_state.page == "home":
 
         with col3:
             st.markdown("#### Website")
-            st.code("https://cjnnow.com/admin")  
+            st.link_button("Open Website","https://cjnnow.com/admin")    
         
         col1, col2,col3 = st.columns(3)
 
@@ -274,7 +274,8 @@ if st.session_state.page == "home":
             st.code("Pass@143")
         with col3:
             st.markdown("#### Website")
-            st.code("https://cjnnow.com/school-admin-login")         # st.status("copied")
+            st.link_button("Open Website","https://cjnnow.com/school-admin-login")         # st.status("copied")
+                 # st.status("copied")
 
 
 
@@ -598,9 +599,3 @@ elif st.session_state.page == "club":
     st.markdown("_____")
 
     
-
-
-
-   
-
-# import streamlit as st
